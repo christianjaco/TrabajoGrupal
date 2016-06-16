@@ -1,4 +1,4 @@
-package com.cinnamon.digitapp;
+package com.cinnamon.digitapp.model;
 
 /**
  * Created by Christian on 9/6/2016.
@@ -10,14 +10,16 @@ public class Noticia {
     private Integer imagenID;
     private Integer tiempo;
     private Integer imagenCategorias;
+    private String categoria;
 
 
-    public Noticia(String titular,String descripcion,Integer imagenID,Integer tiempo,Integer imagenCategorias){
+    public Noticia(String titular,String descripcion,Integer imagenID,Integer tiempo,Integer imagenCategorias,String categoria){
         this.titular=titular;
         this.descripcion=descripcion;
         this.imagenID=imagenID;
         this.tiempo=tiempo;
         this.imagenCategorias=imagenCategorias;
+        this.categoria=categoria;
     }
 
     public String getTitular() {
@@ -38,5 +40,9 @@ public class Noticia {
 
     public Integer getImagenCategorias() {
         return imagenCategorias;
+    }
+
+    public String getCategoria() {
+        return categoria;
     }
 }

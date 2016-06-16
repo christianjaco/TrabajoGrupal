@@ -8,6 +8,9 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+import com.cinnamon.digitapp.controller.NoticiaController;
+import com.cinnamon.digitapp.dao.NoticiaDAO;
+
 /**
  * Created by Christian on 12/6/2016.
  */
@@ -27,6 +30,9 @@ public class FragmentMasLeido extends Fragment {
         activity.setSupportActionBar(toolbar);
         activity.getSupportActionBar().setTitle("Mas leidas");
         return unaView;
+
+
+
     }
 
 }

@@ -1,12 +1,13 @@
 package com.cinnamon.digitapp;
 
-import android.provider.ContactsContract;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
+
+import com.cinnamon.digitapp.model.Noticia;
 
 import java.util.List;
 
@@ -18,11 +19,14 @@ public class AdapterRecyclerView extends RecyclerView.Adapter implements View.On
     private View.OnClickListener listener;
     private List<Noticia> listaNoticias;
 
-    public AdapterRecyclerView(List<Noticia> listaNoticias) {
+    public AdapterRecyclerView(View.OnClickListener listener, List<Noticia> listaNoticias) {
+
         this.listaNoticias = listaNoticias;
     }
+
     public void setOnClickListener(View.OnClickListener unListener){
-        listener=unListener;
+
+        listener = unListener;
     }
 
     @Override

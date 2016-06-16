@@ -11,20 +11,21 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical"
-        tools:context="com.cinnamon.digitapp.MainActivity"
+        tools:context=".view.ActivityMain"
         android:background="#c7c3c3"
         android:id="@+id/aca_va_el_fragment">
 
     <include layout="@layout/app_bar_general"
         android:id="@+id/toolbar"/>
 
-        <android.support.v7.widget.RecyclerView
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:id="@+id/layout_recycler_view"
-            android:layout_margin="5dp"
-            >
-        </android.support.v7.widget.RecyclerView>
+       <android.support.v4.view.ViewPager
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"
+           android:id="@+id/view_pager"
+           android:paddingLeft="12dp"
+           android:paddingRight="24dp">
+
+       </android.support.v4.view.ViewPager>
     </LinearLayout>
 
     <android.support.design.widget.NavigationView
