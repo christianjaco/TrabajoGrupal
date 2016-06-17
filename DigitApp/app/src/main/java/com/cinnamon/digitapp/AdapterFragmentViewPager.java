@@ -14,7 +14,7 @@ import java.util.List;
  */
 public class AdapterFragmentViewPager extends FragmentStatePagerAdapter {
 
-    private List<FragmentNoticia> listaFragmentNoticias;
+    private List<Fragment> listaFragmentNoticias;
 
     public AdapterFragmentViewPager(FragmentManager fm) {
         super(fm);
@@ -28,11 +28,13 @@ public class AdapterFragmentViewPager extends FragmentStatePagerAdapter {
 
     @Override
     public Fragment getItem(int position) {
+
         return this.listaFragmentNoticias.get(position);
     }
 
     @Override
     public int getCount() {
+
         return listaFragmentNoticias.size();
     }
 }

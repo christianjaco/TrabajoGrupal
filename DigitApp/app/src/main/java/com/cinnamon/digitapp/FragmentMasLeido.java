@@ -19,10 +19,6 @@ public class FragmentMasLeido extends Fragment {
 
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
 
-        if(container != null){
-            container.removeAllViews();
-        }
-
         View unaView = inflater.inflate(R.layout.mas_leidas_fragment, container, false);
         AppCompatActivity activity = (AppCompatActivity) getActivity();
 
@@ -30,9 +26,6 @@ public class FragmentMasLeido extends Fragment {
         activity.setSupportActionBar(toolbar);
         activity.getSupportActionBar().setTitle("Mas leidas");
         return unaView;
-
-
-
     }
 
 }

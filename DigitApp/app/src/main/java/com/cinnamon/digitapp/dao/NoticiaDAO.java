@@ -33,12 +33,13 @@ public class NoticiaDAO {
 
     public List<Noticia> getListaFiltrada(String unaCategoria) {
 
-        List<Noticia> listaNoticiasFiltradas = getNoticias();
+        List<Noticia> listNoticias = getNoticias();
+        List<Noticia> listaNoticiasFiltradas = new ArrayList<>();
 
 
-        for (int i = 0; i < listaNoticiasFiltradas.size(); i++) {
-            if (listaNoticiasFiltradas.get(i).getCategoria() == unaCategoria) {
-                listaNoticiasFiltradas.add(listaNoticiasFiltradas.get(i));
+        for (int i = 0; i < listNoticias.size(); i++) {
+            if (listNoticias.get(i).getCategoria().equals(unaCategoria)) {
+                listaNoticiasFiltradas.add(listNoticias.get(i));
             }
 
         }

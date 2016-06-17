@@ -41,8 +41,7 @@ public class ActivityMain extends AppCompatActivity {
         Toolbar toolbar=(Toolbar)findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
-        Toast.makeText(this, "HOLA", Toast.LENGTH_SHORT).show();
-       /* ViewPager viewPager = (ViewPager) findViewById(R.id.view_pager);
+        ViewPager viewPager = (ViewPager) findViewById(R.id.view_pager);
         AdapterFragmentViewPager adapterViewPager = new AdapterFragmentViewPager(getSupportFragmentManager());
         viewPager.setAdapter(adapterViewPager);
 
@@ -50,7 +49,7 @@ public class ActivityMain extends AppCompatActivity {
         viewPager.setPageMargin(12);
 
         navigationView = (NavigationView) findViewById(R.id.navigationView);
-        navigationView.setNavigationItemSelectedListener(new ListenerMenu());*/
+        navigationView.setNavigationItemSelectedListener(new ListenerMenu());
 
     }
 

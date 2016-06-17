@@ -16,9 +16,7 @@ public class FragmentModa extends Fragment {
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        if(container != null){
-            container.removeAllViews();
-        }
+
         View unaView = inflater.inflate(R.layout.moda_fragment, container, false);
         AppCompatActivity activity = (AppCompatActivity) getActivity();
 

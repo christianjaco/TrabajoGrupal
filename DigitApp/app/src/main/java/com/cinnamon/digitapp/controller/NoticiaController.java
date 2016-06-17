@@ -18,7 +18,8 @@ public class NoticiaController {
     }
 
     public List<Noticia> getFeedsFiltrados(String categoria){
-        List<Noticia>listaNoticias = getFeeds();
+        NoticiaDAO noticiaDAO = new NoticiaDAO();
+        List<Noticia>listaNoticias = noticiaDAO.getListaFiltrada(categoria);
 
         return listaNoticias;
     }
